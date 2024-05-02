@@ -13,7 +13,7 @@ data = fromJSON("../data/monthly-2023.json")
 
 data %>%
   filter(ecoActCode== 702200) %>%
-  saveRDS('../data/682000.rds')
+  saveRDS('../data/702200.rds')
 
 
 
