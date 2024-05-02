@@ -3,7 +3,7 @@ library(ggplot2)
 
 #2.1 užduotis
 
-data = readRDS("../data/682000.rds")
+data = readRDS("../data/702200.rds")
 png(file="../img/1_Grafikas.png",
     width=600, height=350)
 h1=hist(data$avgWage, breaks = 200, main = paste("Vidutinio atlyginimo histograma"),
@@ -40,4 +40,3 @@ h3 = apdrausti%>%
   ggplot(aes(x = name, y = DaugApdrausti, fill = name)) +geom_col()+
   labs(title = "Top 5 įmonės", x = "Mėnesiai", y  = "Vidutinis atlyginimas")
 ggsave("../img/3_Grafikas.png", h3, width = 2400, height = 1200, units = ("px"))
-
